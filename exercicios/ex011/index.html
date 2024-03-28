@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+   <h1>
+    Imagem dinamica
+   </h1> 
+   <p>
+    tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador
+   </p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/fotopeq.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/fotomed.png" type="image/png">
+    <img src="Imagens/fotogrand.png" alt="Imagem flexivel">
+
+</picture>
+<h2>
+    codigo para imagens flexiveis.
+</h2>
+<p>
+    o codigo para conseguirmos imagens flexiveis e:
+</p>
+<p>
+ <pre>
+     <code>
+        &lt picture &gt
+             &lt source media="(max-width: 750px)" srcset="imagens/fotopeq.png" type="image/png" &gt
+             &lt source media="(max-width: 1050px)" srcset="imagens/fotomed.png" type="image/png" &gt
+             &lt img src="Imagens/fotogrand.png" alt="Imagem flexivel" &gt
+        
+         &lt /picture &gt 
+    </code>
+ </pre>
+</p>
+<p>
+    esse codigo deve comecar com a imagem principal e acima dela colocar as de tamanhos menores, caso contrario o codigo nao funcionara. Nao precisamos necessariamente usar so tres tamanhos de imagens, isso vai de cada um.
+</p>
+<h2>
+    testes
+</h2>
+<p>
+    abaixo testarei com outras imagens.
+</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="Imagens/fotosite-p.jpg" type="image/jpg">
+    <source media="(max-width: 1050px)" srcset="Imagens/fotosite-m.jpg" type="image/jpg">
+    <img src="Imagens/fotosite-g.jpg" alt="Imagem flexivel-2">
+</picture>
+<h1>
+    Reproduzindo Audio
+</h1>
+<p>
+    vamos aprender a reproduzir audios em HTML5
+</p>
+<audio src="audios/happymistake.mp3" controls >Happymistake</audio>
+<br>
+<p>
+    para adicionarmos um audio ao HTML5 usamos a tag &lt audio &gt, abaixo havera um exemplo!
+</p>
+<br>
+<pre>
+    <code>
+         &lt audio src="audios/happymistake.mp3" controls &gt Happymistake &lt/audio &gt
+    </code>
+</pre>
+<p>
+    e muito importante adicionar o "controls"!!
+</p>
+<p>
+   Dentro da tag & lt audio &gt, tambempodemos usar a tag &lt source &gt. Assim el
+</p>
+<br>
+<audio preload="metadata" controls>
+    <source src="audios/guanacast.mp3" type="audio/mpeg">
+    <source src="audios/happymistake.mp3" type="audio/mpeg">
+    <source src="audios/happymistake.wav" type="audio/wav">
+    <source src="audios/happymistake.ogg" type="audio/ogg">
+</audio>
+<p>
+    O Source funciona como o exemplo abaixo.
+</p>
+<br>
+<pre>
+    <code>
+         &lt audio preload="metadata" controls>
+            &lt source src="audios/guanacast.mp3" type="audio/mpeg">
+            &lt source src="audios/happymistake.mp3" type="audio/mpeg">
+            &lt source src="audios/happymistake.wav" type="audio/wav">
+            &lt source src="audios/happymistake.ogg" type="audio/ogg">
+        &lt/audio>
+    </code>
+</pre>
+<p>
+    podemos usar todos esses tipos de audios em nosso site,porem e recomendavel excluir o audio .wav pois eles tendem a serem muito grandes e pesados assim deixando o site lento!!
+</p>
+<h1>
+    reproduzindo videos
+</h1>
+
+</body>
+</html>

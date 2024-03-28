@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatacoes</title>
+</head>
+<body>
+    <h1>Outras Formatacoes/ Pre Fortmatado</h1>
+    <h2>Codigo-fonte</h2>
+    <p>O comomando <code>document.getElementById</code> ('teste') e escrito em linguagem JavaScript.</p>
+    <br>
+    <p>
+        Para deixarmos algum codigo de JS ou outra linguagem 'bonito' visualmente no nosso Html usamos primeiro a tag &lt pre &gt e dentro desta tag 'pre' nos colocamos a tag &lt code &gt e agora dentro da tag code nos escrevemos o nosso codigo, Abaixo ira ter uma demonstracao com as tags que mostrei acima e uma sem o uso de nenuma tag.   
+    </p>
+    <p>
+        Escreva como esta abaixo:
+    </p>
+    <pre>
+
+        <code>
+            &lt pre &gt
+                 &lt code &gt
+            
+                 //Escreva o codigo
+                 &lt /code &gt
+            &lt /pre &gt
+        </code>
+    </pre>
+    <h2>
+        exemplos
+    </h2>
+    <h3>codigo sem o uso de tags</h3>
+    <p>
+        // Função para gerar um número aleatório entre 1 e 10
+        function generateRandomNumber() {
+            return Math.floor(Math.random() * 10) + 1;
+        }
+
+        // Variável para armazenar o número aleatório
+        var randomNumber = generateRandomNumber();
+
+        // Função para verificar o palpite do jogador
+        function checkGuess() {
+            var guess = document.getElementById("guessInput").value;
+
+            if (guess == randomNumber) {
+                document.getElementById("result").innerHTML = "Parabéns! Você acertou!";
+            } else {
+                document.getElementById("result").innerHTML = "Desculpe, tente novamente.";
+            }
+        }
+    </p>
+    <h3>
+        codigo com o uso das tags
+    </h3>
+    <pre>
+        <code>
+            // Função para gerar um número aleatório entre 1 e 10
+        function generateRandomNumber() {
+            return Math.floor(Math.random() * 10) + 1;
+        }
+
+        // Variável para armazenar o número aleatório
+        var randomNumber = generateRandomNumber();
+
+        // Função para verificar o palpite do jogador
+        function checkGuess() {
+            var guess = document.getElementById("guessInput").value;
+
+            if (guess == randomNumber) {
+                document.getElementById("result").innerHTML = "Parabéns! Você acertou!";
+            } else {
+                document.getElementById("result").innerHTML = "Desculpe, tente novamente.";
+            }
+        }
+        </code>
+    </pre>
+    <br>
+    <p>
+        percebeu que ao usar as tags no codigo ele ficou mais facil de entender e visualmente mais bonito e organizado?
+    </p>
+    <br>
+    <h2>
+        Citacoes Silpes (sem quebra)
+    </h2>
+    <p>
+        Para fazermos uma Citacao Simples usamos a tag &lt q &gt, Exemplo: <q>Como diria o Pai de um amigo, o computador e um burro muito rapido</q>
+    </p>
+    <h2>
+        Citacoes Completas
+    </h2>
+    <p>
+Para fazermos um sitacao completa usamos a tag &lt blockquote &gt, Exemplo:
+<blockquote cite="https://www.pensador.com/frases_de_livros_inspiradoras_marcantes/#:~:text=Ser%20feliz%20é%20uma%20responsabilidade,Pouca%20gente%20tem%20coragem.&text=Nunca%20podemos%20julgar%20a%20vida,sua%20própria%20dor%20e%20renúncia.&text=Pretender-se%20que%20a%20vida,toda%20a%20possibilidade%20de%20vida.">
+    Ser feliz é uma responsabilidade muito grande. Pouca gente tem coragem. Nunca podemos julgar a vida dos outros, porque cada um sabe de sua própria dor e renúncia. Pretender-se que a vida dos homens seja sempre dirigida pela razão é destruir toda a possibilidade de vida.
+</blockquote>
+    </p>
+    <h2>
+        Abreviacoes
+    </h2>
+    <p>
+        Para mostrarmos em nosso HTML oque significa uma sigla usamos a tag &lt abbr &gt, Exemplo: <abbr title="Hoje">Hj</abbr> eu estudei Matematica. e assim quando passarmos o cursor em cima dessa abreviacao ira mostrar o significado dela.
+    </p>
+    
+</body>
+</html>

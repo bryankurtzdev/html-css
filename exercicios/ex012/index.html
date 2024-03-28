@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no site</title>
+</head>
+<body>
+    <h1>
+        Hoje irei aprender como colocar videos usando HTML5 no meu site.
+    </h1>
+    <p>
+            Este video esta hospedado no meu prorpio servidor.
+    </p>
+<video src="videos/pexelshandbreak.mp4" windth="900" controls loop>video 360 de casa</video>
+<p>
+    Para inserirmos videos no site como o de cima usamos o codigo
+</p>
+<pre>
+    <code>
+        &ltvideo src="(Video)"<strong>controls</strong>>&lt/video>
+    </code>
+</pre>
+<p>
+    Lembrando que o "controls" e muito importante, pois sem ele nao conseguiriamos dar play no nosso mp4.
+</p>
+<br>
+
+
+<video controls loop>
+    <source src="videos/pexelshandbreak.mp4" type="video/mp4">
+    <source src="videos/pexels.ogv" type="videos/ogv">
+    <p>
+        seu navegaor nao tem compatibilidade com reproducao de videos.
+    </p>
+</video>
+<br>
+<p>
+    Mais uma dica para os videos e por eles em um (source) assim colocando todos os tipos de formatos no site, assim possibilitando que o cliente consiga ver o video em qualquer navegador. A mesma coisa acontece nos audios e imagens.
+</p>
+<p>
+    Um exemplo de codigo source abaixo.
+</p>
+<pre>
+    <code>
+        &ltvideo controls>
+            &ltsource src="videos/pexelshandbreak.mp4" type="video/mp4">
+            &ltsource src="video/pexels.ogv" type="videos/ogv">
+            &ltp>
+                seu navegaor nao tem compatibilidade com reproducao de videos.
+            &lt/p>
+        &lt/video>  
+    </code>
+</pre>
+<br>
+<h1>
+    Incorporacao de video
+</h1>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b9JEhQbpUsA?si=tIGFBKY71ynFAtBm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+<br>
+<p>
+    para incorporamos videos do youtube em nosso site e muito simples, basta acharmos o video desejado no site do youtube, clicar em compartilhar e em seguida no botao de "incorporar", apos copiar o codigo produzido pelo youtube e so colarmos em nosso site, pois esse video ira usar dados do site do youtube e nao do nosso. 
+</p>
+
+</body>
+</html>

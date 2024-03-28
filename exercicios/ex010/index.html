@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: rgb(255, 0, 0);
+        }
+        body{ 
+            background-color: rgb(255, 255, 255);
+        }
+        ol{ 
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Vamos Criar Um Link!!
+    </h1>
+    <a href="https://youtu.be/LeOVXQDsAIY?si=sVNxyEZeYmv_4-AU" target="_blank">Assista este Video para entender melhor as ancoras</a>
+    <h2>
+        para criarmos uma ancroa usamos a tag &lt a &gt,
+    </h2>
+    <h2>
+        os primeiros passos sao:
+    </h2>
+    <ol>
+        <li>Abrir a tag &lt a &gt</li>
+        <li>Apos isso coloca a URL do site na sua ancora.</li>
+        <li>Especificar oque/do que se trata esta URL</li>
+    </ol>
+    o codico ficara como o do exemplo abaixo.
+    <pre>
+        <code>
+            
+                 &lt a href="https://youtu.be/JlE0pzESf5g?si=mGNo8M3qFIZnMzP8"&gt Assista este Video para entender melhor as ancoras &lt/a &gt
+        </code>
+    </pre>
+    <h2>
+        Agora fique com um breve explicacao das targets que podemos usar no href: <br>
+    </h2>
+
+    <h3>
+        Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target, 
+        que suporta os seguintes valores:
+    </h3>
+
+<p>
+    <ul type="circle">
+    
+            <li>
+    
+                _blank vai abrir o link em uma nova janela em branco
+            </li>
+            <br>
+            <li>
+                _self vai abrir o link na janela ou frame atual padrão
+            </li>
+            <br>
+            <li>
+                _top vai desfazer todos os frames e abrir o destino no navegador completo
+            </li>
+            <br>
+            <li>
+                _parent similar ao uso do _top em uma referência à janela mãe
+            </li>
+            <li>
+                 nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
+            </li>
+    
+    
+    
+    </ul>
+</p>
+
+<p>
+    
+        Como o uso de frames é uma técnica quase em desuso, vamos nos basear apenas nas
+        duas primeiras opções _blank e _self.
+</p>
+<h1>
+    Links Internos
+</h1>
+<h2>
+    Para adicionarmos um link interno no nosso site usamos a tag:
+</h2>
+<pre>
+    <code>  
+        &lt a &gt href="pag002.html">Ir para a segunda Pagina &lt /a &gt 
+    </code>
+</pre>
+<p>
+    Porem antes de adicionarmos uma outra pagina, obviamente precisamos ter uma.
+</p>
+<br>
+<h2>
+    Para proseguir a segunda pagina do site clique no link abaixo.
+</h2>
+<p>
+    <a href="pag002.html" tareget="_self" rel="next">Ir para a segunda Pagina</a>
+</p>
+<h1>
+    Links Externoss
+</h1>
+<p>
+    Os links externos sao links que levam a outro site ou alguma outra coisa fora do nosso html.
+</p>
+    <p>
+        O codigo para os links externos e a mesma coisa dos links internos.
+    </p>
+    <pre>
+        <code>
+            <a href="https://youtu.be/LeLnlT-ZKw8?si=EHFp0i07k5-ROxFk" target="_blank" rel="external">Canal do Curso em Video </a>
+        </code>
+    </pre>
+    <p>
+        Em links externos utilizamos a mesma tag, mas mudamos o target dela, essa target diferente dos links internos que abrirao na mesma aba, a target dos links externos abrirao em uma nova aba.
+    </p>
+    <p>
+        para isso ocorrer precisamos adicionar algumas palavrinhas apos a URL dao link, essas palavrinhas sao: target="_blank" , esse comando ira fazer o link abrir em uma nova aba.
+    </p>
+  <h1>
+    Tipos De Targets
+  </h1>
+  <p>
+    Usamos os targets para controlar onde o site de destino vai abrir.E esses sao os tipos de target: <br>
+    <ul>
+        <li>_blank vai abrir o link em uma nova janela em branco</li>
+        <li>_self vai abrir o link na janela ou frame atual (padrão)</li>
+        <li>_top vai desfazer todos os frames e abrir o destino no navegador completo</li>
+        <li>_parent similar ao uso do _top em uma referência à janela mãe</li>
+        <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir</li>
+    </ul>
+  </p>
+  <h1>
+    Links para Dowload
+  </h1>
+  <ul>
+    <li><a href="livro/10 - Ligações em toda parte.zip" dowload="10 - Ligações em toda parte.zip" type="application/zip">Aula 10.zip</a>
+    </li>
+    
+  </ul>
+</body>
+</html>

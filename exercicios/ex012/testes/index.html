@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de testes</title>
+    <link rel="shortcut icon" type="image/x-ico"
+    href="youtube_logo_icon_259362.ico" >
+</head>
+<body>
+    <h1>
+        Neste HTML5 vou fazer algumas revisoes do que aprendi ate aqui.
+        &#128578;
+    </h1>
+    <p>
+        Vou adicionar um ico novo.
+    </p>
+  <picture>
+     <source media="(max-width: 750px )" srcset="imagens/fotopeq.png" type="image/png">
+     <source media="(max-width: 1050px)" srcset="imagens/fotomed.png" type="image/png">
+     <img src="imagens/fotogrand.png" alt="Imagem felxivel">
+  </picture>
+<br>
+<p>
+    para imagens flexiveis usamos o codigo abaixo.
+</p>
+<br>
+<pre>
+    <code>
+        < picture >
+             < source media="(max-width: 750px)" srcset="imagens/fotopeq.png" type="image/png" >
+             < source media="(max-width: 1050px)" srcset="imagens/fotomed.png" type="image/png" >
+             < img src="Imagens/fotogrand.png" alt="Imagem flexivel" >
+        
+         < /picture > 
+    </code>
+</pre>
+<br>
+<h2>
+    inserindo audios
+</h2>
+<p>
+    Para inserirmos audios usamos o codigo abaixo.
+</p>
+<pre>
+    <code>
+        &ltaudio src="(Arquivo do audio)" controls>(Nome do audio) &lt/audio>
+    </code>
+</pre>
+<p>
+    Essa e a forma mais simples, porem podem existir navegadores que nao serao compativeis com o .mp3, para evitar isso podemos usar a tag "source" assim como o exemplo abaixo.
+</p>
+<pre>
+    <code>
+        &ltaudio preload="metadata" controls>
+             &ltsource src="(Arquivo .mp3)" type="audio/mpeg">
+             &ltsource src="(Arquivo .ogg)" type="audio/ogg">
+             &ltsource src="(Arquivo.wav)" type="audio/wav">
+        &ltp>
+            Seu Navegador nao tem suporte para a reproducao de audio.
+        &lt/p>
+        &lt/audio>
+       
+    </code>
+</pre>
+<p>
+Com o codigo acima se o navegador nao for compativel com . mp3 o navegaor reproduz o .ogg caso o navegador tambem nao for compativel com . ogg ela reproduz o .wav e se ele tambem nao suportar o .wav ele mostra oque escrevemos dendo da tag &ltp&gt
+
+<audio preload="metadata" controls>
+    <source src="imagens/audios/guanacast.mp3" type="audio/mpeg">
+    <source src="imagens/audios/happymistake.mp3" type="audio/mpeg">
+    <p>
+        Seu navegador nao e compativel com a reproducao de audios.
+    </p>
+</audio>
+<p>
+    para links usamos  a tag &lta&gt
+</p>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.iframe {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 58.8%;
+    position: relative;
+}
+
+.iframe > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
