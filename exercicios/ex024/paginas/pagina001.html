@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: arial;
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .cnome {
+            background-color: chartreuse;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Joao Antonio</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Carpinteiro</td>
+        </tr>
+        <tr>
+            <td>Larissa</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Caixa</td>
+        </tr>
+        <tr>
+            <td>Fabricio Fagundes</td>
+            <td>M</td>
+            <td>47</td>
+            <td>Caminhoneiro</td>
+        </tr>
+        <tr>
+            <td>Rebecca</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Manicure</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>M</td>
+            <td>59</td>
+            <td>Metalurgico</td>
+        </tr>
+    </table>
+</body>
+</html>
